@@ -208,6 +208,7 @@ nav {
 
 @media screen and (max-width: 999px) {
     .content-main .greetings p {
+      font-size:26px;  
       text-align: center;
     }
 }
@@ -220,6 +221,7 @@ nav {
 
 @media screen and (max-width: 999px) {
     .content-main .greetings h1 {
+      font-size:30px;  
       text-align: center;
     }
 }
@@ -304,21 +306,20 @@ nav {
 @media (max-width: 1280px) {
     .myself {
       flex-direction: column;
-      width: 50%;
+      width: 100%;
       display: flex;
     }      
 }
 
 .photo {
-    width: 50%;
-    padding-left: 200px;
+    width: 60%;
 }
 
 @media (max-width: 1280px) {
     .photo {
       flex-direction: column;
-      width: 75%;
-      padding-left: 85%;
+      max-width: 300px;
+      min-width: 200px;
     }      
 }
 
@@ -328,6 +329,12 @@ nav {
     filter:grayscale(100%);
 }
 
+@media (max-width: 1280px) {
+    .about .photo img {
+    filter:grayscale(0%);
+    }
+}    
+
 .about .photo img:hover {
     background: var(--menu-color);
     box-shadow: 0 0px 15px var(--primary-color);
@@ -336,7 +343,7 @@ nav {
 }
 
 .about .text {
-    text-align: center;
+    text-align:left;
 }
 
 .text h2 {
@@ -347,10 +354,10 @@ nav {
 }
 
 @media (max-width: 1280px) {
-    .about .text h2 {  
+    .about .text h2 {
+    padding-right: 10px;
     width: 100%;
-    padding-left: 40%;
-    min-width: 250px
+    min-width:300px;
     }      
 }
 
@@ -371,7 +378,16 @@ nav {
 @media (max-width: 1280px) {
     .about .text p {  
       width: 100%;
-      padding-left: 40%;
+      max-width: 500px;
+      min-width: 275px;
+      flex-wrap: wrap;
+    }      
+}
+
+@media (max-width: 450px) {
+    .about .text p {  
+      width: 100%;
+      max-width: 250px;
     }      
 }
 /*section contacts*/
@@ -545,8 +561,7 @@ nav {
 #skills h2 {
     width: 310px;
     margin: auto;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding: 100px 0 50px ;
     font-size: 40px;
     color: var(--white-color);
 }
@@ -562,8 +577,11 @@ nav {
 
 .skills .content-skills {
     flex-wrap: wrap;
+    margin:auto;
     gap: 20px;
+    width: 100%;
 }
+
 
 @media (min-width: 1280px) {
 .skills .content-skills {
@@ -574,8 +592,7 @@ nav {
 
 @media (min-width: 1280px) {
 .skills .content-skills>div {
-    width: 40%;
-    display: flex;
+    width: 45%;
     align-items: center;
     }   
 }
@@ -602,7 +619,7 @@ nav {
 
 .skill>div {
     margin-left: 2em;
-    margin-right: 30px;
+    margin-right: 15px;
     margin-top: 15px;
 }
 
@@ -613,11 +630,11 @@ nav {
 }
 
 @media (min-width: 1280px) {
-        .skill>div>p {
-        display: flex;
-        text-align: justify;
-        }
+    .skill>div>p {
+    display: flex;
+    text-align: justify;
     }
+}
 
 .skill {
     background-color: var(--background-color);
@@ -630,6 +647,7 @@ nav {
     width: 50%;
     word-wrap: break-word;
 }
+
 
 .skill:hover {
     -webkit-transform: scale(1.025);
