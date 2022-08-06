@@ -54,6 +54,10 @@
     background-color: var(--primary-color);
 }
 
+* {
+    overflow-x: hidden
+}
+
 .title {
     text-align: center;
 }
@@ -70,7 +74,6 @@ main {
 
 body {
     background-color: var(--background-color);
-    overflow-x: hidden
 }
 
 a {
@@ -207,11 +210,6 @@ nav {
     }
 }
 
-
-.content-main .greetings {
-    line-height: 0.8;
-}
-
 .content-main .greetings p {
     color: var(--second-color);
     font-size: 30px;
@@ -238,13 +236,14 @@ nav {
 }
 
 .presentation .greetings {
-    width: 100%;
+    width: 60%;
     margin: 0;
 }
 
 .gif {
     width: 480px;
     margin: auto;
+    overflow-y: hidden;
 }
 
 @media screen and (max-width: 999px) {
@@ -359,12 +358,9 @@ nav {
     transition: 0.5s;
 }
 
-.about .text {
-    text-align: center;
-}
-
 .text h2 {
-    width: 230px;
+    width: 200px;
+    overflow: hidden;
     font-family: 'raleway-semibold';
     font-size: 35px;
     color: var(--white-color);
@@ -372,6 +368,7 @@ nav {
 
 @media (max-width: 1280px) {
     .about .text h2 {
+        text-align: center;
         width: 100%;
         min-width: 300px;
     }
