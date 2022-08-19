@@ -55,7 +55,7 @@
 }
 
 * {
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .title {
@@ -233,6 +233,8 @@ nav {
     .content-main .greetings h1 {
         font-size: 30px;
         text-align: center;
+        height: max-content 23px;
+        overflow: hidden;
     }
 }
 
@@ -248,7 +250,6 @@ nav {
         width: 100%;
         margin: 10px;
         padding-left: 0;
-        height: 250px;
     }
 }
 
