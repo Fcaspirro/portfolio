@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <button class="scrollTop" id="scrollTop">
+        <img src="./assets/images/arrowUp.png" alt="Ícone voltar ao topo">
+    </button>
     <main>
         <div class="wrapper">
             <header>
@@ -92,7 +95,7 @@
                 <div class="grid">
                     <div class="icon location">
                         <div>
-                            <img src="./assets/images/icon-location.png" alt="Icone de localização">
+                            <img src="./assets/images/icon-location.png" alt="Ícone de localização">
                         </div>
                         <strong>Localização</strong>
                         <p>Vila Prudente, SP</p>
@@ -100,7 +103,7 @@
                     <div class="icon phone">
                         <div>
                             <a href="https://wa.me/5511994161781" target="_blank"><img
-                                    src="./assets/images/icon-whatsapp.png" alt="Icone de Telefone"></a>
+                                    src="./assets/images/icon-whatsapp.png" alt="Ícone de Telefone"></a>
                         </div>
                         <strong>Whatsapp</strong>
                         <p>+55 (11) 9.9416-1781</p>
@@ -108,14 +111,14 @@
                     <div class="icon linkedin">
                         <div>
                             <a href="https://linkedin.com/in/fabio-caspirro" target="_blank"><img
-                                    src="./assets/images/icon-linkedin.png" alt="Icone do Linkedin"></a>
+                                    src="./assets/images/icon-linkedin.png" alt="Ícone do Linkedin"></a>
                         </div>
                         <strong>Linkedin</strong>
                         <p>linkedin.com/fabio-caspirro</p>
                     </div>
                     <div class="icon email">
                         <div>
-                            <img src="./assets/images/icon-email.png" alt="Icone do E-mail">
+                            <img src="./assets/images/icon-email.png" alt="Ícone do E-mail">
                         </div>
                         <strong>E-mail</strong>
                         <p>fabio-caspirro@hotmail.com</p>
@@ -134,7 +137,7 @@
                             <h3>Projeto de Landing Page</h3>
                             <div> <img src="./assets/images/project1.png" class= "imgProject" alt="Projeto de Landing Page"></a> </div>
                             <p><b>Tecnologias:</b> HTML e CSS. </br></p>
-                            <p><b>Habilidades:</b> Mobile First, Design Responsivo, Animação. </p>
+                            <p><b>Habilidades:</b> Mobile First, Design Responsivo. </p>
                             <div class="linkedButtons">
                                 <a href="https://fcaspirro.github.io/landing_page-lorem/" target="_blank" >
                                     <button>Página Web</button>
@@ -159,7 +162,7 @@
                 <div class="grid">
                     <div class="content-skills">
                         <div class="skill html">
-                                <img src="./assets/images/html.png" alt="Icone HTML">
+                                <img src="./assets/images/html.png" alt="Ícone HTML">
                             <div>
                                 <span>HTML</span>
                                 <p>HTML é denominado como uma linguagem de marcação, é utilizada na
@@ -167,7 +170,7 @@
                             </div>
                         </div>
                         <div class="skill css">
-                            <img src="./assets/images/css.png" alt="Icone CSS">
+                            <img src="./assets/images/css.png" alt="Ícone CSS">
                             <div>
                                 <span>CSS</span>
                                 <p>CSS é Utilizado para estilizar elementos escritos em uma linguagem de 
@@ -176,7 +179,7 @@
                             </div>
                         </div>
                         <div class="skill js">
-                            <img src="./assets/images/js.png" alt="Icone JavaScript">
+                            <img src="./assets/images/js.png" alt="Ícone JavaScript">
                             <div>
                                 <span>JavaScript</span>
                                 <p>JavaScript permite a implementação de itens complexos em páginas
@@ -185,7 +188,7 @@
                             </div>
                         </div>
                         <div class="skill psd">
-                            <img src="./assets/images/psd.png" alt="Icone Photoshop">
+                            <img src="./assets/images/psd.png" alt="Ícone Photoshop">
                             <div>
                                 <span>Adobe Photoshop</span>
                                 <p>O Adobe Photoshop é um software de edição de imagens, considerado
@@ -206,23 +209,23 @@
                         <div class="card design">
                             <strong>Layout Design</strong>
                             <div>
-                                <img src="./assets/images/icon-design.png" alt="Icone representando Design">
+                                <img src="./assets/images/icon-design.png" alt="Ícone Design">
                             </div>
-                            <p>Aplicação de técnicas de design gráfico como:, tipografia, psicologia das cores.</p>
+                            <p>Aplicação de técnicas de design gráfico como: tipografia, psicologia das cores, alinhamento e escala.</p>
                         </div>
                         <div class="card dev">
                             <strong>Desenvolvimento</strong>
                             <div>
-                                <img src="./assets/images/icon-dev.png" alt="Icone representando Desenvolvimento">
+                                <img src="./assets/images/icon-dev.png" alt="Ícone Desenvolvimento">
                             </div>
-                            <p>Desenvolvimento de sites, portfólios, landing pages e e-commerce.</p>
+                            <p>Desenvolvimento de sites, portfólios, landing pages, e-commerce, etc...</p>
                         </div>
                         <div class="card layout">
                             <strong>Design Responsivo</strong>
                             <div>
-                                <img src="./assets/images/icon-layout.png" alt="Icone representando Design Responsivo">
+                                <img src="./assets/images/icon-layout.png" alt="Ícone Design Responsivo">
                             </div>
-                            <p>Design de sites que se redimensiona a qualquer tamanho ou tipo de tela</p>
+                            <p>Sites com redimensionamento automático a qualquer tamanho ou tipo de tela.</p>
                         </div>
                     </div>
                 </div>
@@ -242,6 +245,22 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const ScrollTop = document.getElementById("scrollTop");
+
+        ScrollTop.addEventListener("click", function () {
+
+        window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+
+})
+    </script>
+    
 
     <script>
         function navBarMobile() {

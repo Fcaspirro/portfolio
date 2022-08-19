@@ -186,6 +186,35 @@ nav {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
+.scrollTop {
+    outline: none;
+    border: 0;
+    width: 64px;
+    height: 64px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    cursor:pointer;
+    visibility: visible;
+    background-color: transparent;
+    transition: all .4s ease;
+}
+
+@media (max-width: 999px) {
+.scrollTop {
+    width: 50px;
+    height: 50px;    
+    right: 10px;
+    bottom: 10px;
+    }
+}
+
 /*section presentation*/
 
 .content-main {
@@ -233,7 +262,7 @@ nav {
     .content-main .greetings h1 {
         font-size: 30px;
         text-align: center;
-        height: max-content 23px;
+        height: max-content 34.5px;
     }
 }
 
@@ -443,6 +472,7 @@ nav {
     padding-bottom: 100px;
     flex-direction: row;
     box-sizing: border-box;
+    overflow-y: hidden;
 }
 
 @media (max-width: 1280px) {
@@ -452,10 +482,15 @@ nav {
 }
 
 .contacts .grid>div {
-    flex: 1 1 400px;
+    flex: 1 1 260px;
     margin: 5px;
 }
 
+@media (max-width: 1280px) {
+    .contacts .grid>div { 
+        margin-top: 20px;
+    }
+}
 
 #contacts h2 {
     width: 185px;
@@ -477,9 +512,9 @@ nav {
 }
 
 .grid .icon {
+    justify-content: center;
     text-align: center;
     width: 100%;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -487,6 +522,12 @@ nav {
     .grid .icon {
         padding: 20px;
     }
+}
+
+.grid .icon>div {
+    width: 32px;
+    margin: auto;
+    padding: 0;
 }
 
 .grid .icon>div img:hover {
@@ -504,20 +545,44 @@ nav {
 }
 
 .grid .icon>div img {
-    width: 30px;
+    width: 30px;  
+}
+
+@media screen and (max-width: 999px) {
+    .grid .icon>div img { 
+        height: max-content 35px;
+    }
 }
 
 .grid .icon>strong {
     color: var(--white-color);
-
+    margin-top: 25px;
 }
 
 .grid .icon>p {
     color: var(--second-color);
+    width: 210px;
+    margin: auto;
+    padding: 0;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 999px) {
+    .grid .icon>p { 
+        height: max-content 18.5px;
+    }
+}
+
+.grid .location > p {
+    width: 135px;
+}
+
+.grid .phone > p {
+    width: 145px;
 }
 
 .grid .icon+.icon {
-    margin-top: 20px;
+    width: 100%;
 }
 
 @media (min-width: 1280px) {
@@ -600,19 +665,13 @@ nav {
 }
 
 .project .imgProject {
-    height: 350px;
+    max-height: 300px;
     border-radius: 5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 999px) {
     .project .imgProject {
-        height: 250px;
-    }
-}
-
-@media (max-width: 375px) {
-    .project .imgProject {
-        height: 200px;
+    min-height: 135px;
     }
 }
 
@@ -642,7 +701,7 @@ nav {
     margin: 0;
     width: 100%;
     color: var(--white-color);
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 20px;
@@ -650,18 +709,27 @@ nav {
 }
 
 .projects .project p {
+    width: 100%;
     color: var(--second-color);
     padding-top: 20px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 999px) {
     .projects .project p {
-        font-size: 14px; 
-    }}
+        font-size: 16px;
+        height: max-content 16px;
+    }
+}
 
 .projects .project p+p {
     padding-top: 0px;
+}
+
+@media screen and (max-width: 999px) {
+    .projects .project p+p {
+        height: max-content 16px;   
+    }
 }
 
 .projects .project .linkedButtons {
@@ -707,7 +775,7 @@ nav {
 }
 
 #skills h2 {
-    width: 310px;
+    width: 275px;
     margin: auto;
     padding: 100px 0 80px;
     font-size: 35px;
@@ -756,20 +824,24 @@ nav {
     color: var(--white-color);
     display: flex;
     padding: 15px;
-    font-size: 14px;
+    font-size: 16px;
     justify-content: center;
     overflow-y: none;
 }
 
+@media (max-width: 1280px) {
+.content-skills {
+    font-size: 14px;
+    }
+}
+
 .skill>img {
-    max-height: 100%;
     height: 40px;
 }
 
-@media (min-width: 1280px) {
-    .content-skills>.skill>img {
-        margin-left: 2em;
-    }
+.content-skills>.skill>img {
+    margin-left: 1.5em;
+    margin-top: 0.5em;
 }
 
 .skill>div {
@@ -781,14 +853,13 @@ nav {
 .skill>div>p {
     width: 100%;
     margin-top: 15px;
-    text-align: left;
-    overflow-y: hidden;
+    font-size: 18px;
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 999px) {
     .skill>div>p {
-        display: flex;
         text-align: justify;
+        font-size: 16px;
     }
 }
 
@@ -806,8 +877,9 @@ nav {
 
 @media (max-width: 1280px) {
     .skill {
-    width: 70%;
-    min-width: 250px
+    width: 100%;
+    min-width: 250px;
+    max-width: 900px;
     }
 }
 
@@ -908,12 +980,6 @@ nav {
     justify-content: center;
 }
 
-@media (max-width: 1280px) {
-    .content-services {
-        overflow-y: none;
-    }
-}
-
 .content-services div {
     flex: 1 1 380px;
     min-width: 300px;
@@ -933,7 +999,13 @@ nav {
 #services .content-services div img {
     padding-top: 35px;
     width: 55px;
-    overflow-y: hidden;
+    height: 55px;
+}
+
+@media screen and (max-width: 999px) {
+    #services .content-services div img {
+        height: max-content 55px;
+    }
 }
 
 #services .content-services div strong {
@@ -949,6 +1021,12 @@ nav {
     color: var(--white-color);
     margin: 0;
     font-size: 18px;
+}
+
+@media (max-width: 999px) {
+    #services .content-services div p {
+        font-size: 16px;
+    }
 }
 
 /* footer */
