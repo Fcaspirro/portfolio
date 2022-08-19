@@ -240,6 +240,7 @@ nav {
     width: 60%;
     margin: 10px;
     padding-left: 30px;
+    height: 310px;
 }
 
 @media screen and (max-width: 999px) {
@@ -247,8 +248,7 @@ nav {
         width: 100%;
         margin: 10px;
         padding-left: 0;
-        height: auto;
-        position: fixed;
+        height: 250px;
     }
 }
 
