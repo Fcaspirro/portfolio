@@ -492,10 +492,10 @@ nav {
     }
 }
 
+
 #contacts h2 {
     width: 185px;
-    margin: auto;
-    padding: 100px 0 100px;
+    margin: 100px auto 100px;
     font-size: 35px;
     color: var(--white-color);
 }
@@ -600,8 +600,7 @@ nav {
 
 #projects h2 {
     width: 185px;
-    margin: auto;
-    padding: 100px 0 100px;
+    margin: 100px auto 100px;
     font-size: 35px;
     color: var(--white-color);
 }
@@ -718,7 +717,7 @@ nav {
 @media screen and (max-width: 999px) {
     .projects .project p {
         font-size: 16px;
-        max-height: 18px; 
+        max-height: 18.5px; 
         overflow-y: hidden;
     }
 }
@@ -729,7 +728,7 @@ nav {
 
 @media screen and (max-width: 999px) {
     .projects .project p+p {
-        max-height: 18px;   
+        max-height: 18.5px;   
         overflow-y: hidden;
     }
 }
@@ -778,8 +777,7 @@ nav {
 
 #skills h2 {
     width: 275px;
-    margin: auto;
-    padding: 100px 0 80px;
+    margin: 100px auto 100px;
     font-size: 35px;
     color: var(--white-color);
 }
@@ -917,8 +915,7 @@ nav {
 
 #services h2 {
     width: 310px;
-    margin: auto;
-    padding-bottom: 40px;
+    margin: 0 auto 40px;
     font-size: 35px;
     color: var(--white-color);
 }
