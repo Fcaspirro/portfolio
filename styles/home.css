@@ -569,7 +569,7 @@ nav {
 
 @media screen and (max-width: 999px) {
     .grid .icon>p { 
-        height: max-content 18.5px;
+        max-height:  18.5px;
     }
 }
 
@@ -718,7 +718,8 @@ nav {
 @media screen and (max-width: 999px) {
     .projects .project p {
         font-size: 16px;
-        height: max-content 16px;
+        max-height: 18px; 
+        overflow-y: hidden;
     }
 }
 
@@ -728,7 +729,8 @@ nav {
 
 @media screen and (max-width: 999px) {
     .projects .project p+p {
-        height: max-content 16px;   
+        max-height: 18px;   
+        overflow-y: hidden;
     }
 }
 
