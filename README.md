@@ -122,6 +122,6 @@ Link para página Web:
 Made by: Fabio Caspirro 😄 <a href="mailto:fabio_caspirro@hotmail.com">Entre em contato | <i>Contact</i></a>
 </h4>
 <p align="center">
-  <a href="https://www.linkedin.com/in/fabio-caspirro-2069b072/">
+  <a href="https://www.linkedin.com/in/fabio-caspirro/">
     <img alt="Fabio Caspirro" src="https://img.shields.io/badge/LinkedIn-Fabio_Caspirro-0e76a8?style=flat&logoColor=white&logo=linkedin">
   </a>  
