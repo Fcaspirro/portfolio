@@ -99,7 +99,7 @@ Para copiar o projeto, utilize os comandos:
 
 ```bash
   # Clonar o repositório | Clone repositories
-  » git clone https://github.com/Gabriel4420/marvelquiz.git
+  » git clone https://github.com/Fcaspirro/portfolio.git
 
 ```
 
