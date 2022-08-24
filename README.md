@@ -22,7 +22,7 @@
 </h3> 
 
 <h3 align="center">
-	<img alt="Demo Gif" title="demo" src="./assets/github/images/demo.gif"/>
+	<img height="450px" alt="Demo Gif" title="demo" src="./assets/github/images/demo.gif"/>
 </h3>
   
 ---
@@ -77,7 +77,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
   
 </p><br>
 
-### IDE
+### ⚙ IDE
   
 <p>
   
