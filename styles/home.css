@@ -578,7 +578,7 @@ nav {
 }
 
 .grid .phone > p {
-    width: 145px;
+    width: 150px;
 }
 
 .grid .icon+.icon {
@@ -638,6 +638,7 @@ nav {
     padding: 20px 20px 20px 20px;
     background-color: var(--background-color);
     border-radius: 5px;
+    height: 520px;
 }
 
 #p2.project {
@@ -648,6 +649,12 @@ nav {
 @media (max-width: 1280px) {
     #p1.project { 
         border: 2px solid var(--primary-color);
+    }
+}
+
+@media (max-width: 600px) {
+    #p1.project { 
+        height: auto;
     }
 }
 
@@ -703,50 +710,75 @@ nav {
     font-size: 20px;
     text-align: center;
     padding-top: 5px;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px;   
 }
 
-.projects .project p {
-    width: 100%;
-    color: var(--second-color);
-    padding-top: 20px;
+.netflix .info {
     font-size: 18px;
+    margin: 20px 0;
 }
 
 @media screen and (max-width: 999px) {
-    .projects .project p {
+    .netflix .info {
         font-size: 16px;
-        max-height: 18.5px; 
         overflow-y: hidden;
     }
 }
 
-.projects .project p+p {
+@media screen and (max-width: 370px) {
+    .netflix .info {
+        font-size: 14px; 
+    }
+}
+
+.project p {
+    width: 100%;
+    color: var(--second-color);
+    font-size: 18px;
+    flex-wrap: wrap;
+} 
+
+@media screen and (max-width: 999px) {
+    .project p {
+        font-size: 16px;
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .project p {
+        font-size: 14px; 
+    }
+}
+
+.project p+p {
     padding-top: 0px;
 }
 
 @media screen and (max-width: 999px) {
-    .projects .project p+p {
-        max-height: 18.5px;   
+    .project p+p { 
         overflow-y: hidden;
     }
 }
 
-.projects .project .linkedButtons {
-    padding-top: 15px;
+.project .linkedButtons {
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
 @media (max-width: 500px) {
-    .projects .project .linkedButtons {
+    .project .linkedButtons {
         gap: 25px;
     }
 }
 
-.projects .project button {
+.project .linkedButtons.netflix {
+    padding-top: 0px;
+}
+
+.project button {
     padding: 10px 10px;
     font-size: 16px; 
     background: var(--menu-color);
@@ -757,7 +789,7 @@ nav {
     font-family: 'raleway-light';
 }
 
-.projects .project button:hover {
+.project button:hover {
     text-decoration: none;
     background: var(--primary-color);
     border-style: dotted;
@@ -765,7 +797,7 @@ nav {
 }
 
 @media (max-width: 1280px) {
-    .projects .project button {
+    .project button {
         font-size: 14px;
     }
 } 
