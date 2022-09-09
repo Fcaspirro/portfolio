@@ -789,6 +789,10 @@ nav {
     padding-top: 85px;
 }
 
+.project .linkedButtons.casino {
+    padding-top: 47.5px;
+}
+
 .project button {
     padding: 10px 10px;
     font-size: 16px; 
