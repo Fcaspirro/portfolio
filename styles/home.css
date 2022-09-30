@@ -604,7 +604,7 @@ nav {
     color: var(--white-color);
 }
 
-.project img{
+.project img {
     margin: auto;
     font-size: 35px;
     color: var(--white-color); 
@@ -632,18 +632,29 @@ nav {
     padding: 20px;
 }
 
+.content-projects>div>div {
+    padding-bottom: 5px;
+}
+
 #p1.project {
     margin: 2px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 15px 20px 15px;
     background-color: var(--background-color);
     border-radius: 5px;
-    height: 415px;
+    height: 440px;
     overflow-y: hidden;
+    min-width: 225px;
+}
+
+@media (max-width: 399px) {
+    #p1>h3 {
+        font-size: 16px;
+    }
 }
 
 #p2.project {
     margin: 2px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 15px 20px 15px;
     overflow-y: hidden;
 }
 
@@ -655,7 +666,7 @@ nav {
 
 @media (max-width: 600px) {
     #p1.project { 
-        height: auto;
+        max-height: 380px;
     }
 }
 
@@ -714,88 +725,60 @@ nav {
     padding-bottom: 20px;   
 }
 
-.netflix .info {
-    font-size: 18px;
-    margin: 20px 0;
-}
-
-@media screen and (max-width: 999px) {
-    .netflix .info {
-        font-size: 16px;
-        overflow-y: hidden;
-    }
-}
-
-@media screen and (max-width: 370px) {
-    .netflix .info {
-        font-size: 14px; 
-    }
-}
-
 .project p {
     width: 100%;
     color: var(--second-color);
-    font-size: 18px;
+    font-size: 14px;
     flex-wrap: wrap;
+    margin: 10px 0px;
 } 
 
 @media screen and (max-width: 999px) {
     .project p {
-        font-size: 16px;
+        font-size: 12px;
         overflow-y: hidden;
     }
 }
 
 @media screen and (max-width: 370px) {
     .project p {
-        font-size: 14px; 
+        font-size: 10px; 
     }
 }
 
-.project p+p {
-    padding-top: 0px;
-}
-
-@media screen and (max-width: 999px) {
-    .project p+p { 
-        overflow-y: hidden;
-    }
-}
-
-.project .linkedButtons {
-    padding-top: 25px;
+.content-projects .workButtons {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    min-width: 12vw;
+    height: 12rem;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    text-align: justify;
 }
 
-@media (max-width: 500px) {
-    .project .linkedButtons {
-        gap: 25px;
+@media (max-width: 600px) {
+    .content-projects .linkedButtons {
+        min-height: 5rem;
     }
 }
 
-@media (max-width: 999px) {
-    .project .linkedButtons.lorem {
-        padding-top: 50px;
+@media (max-width: 400px) {
+    .content-projects .linkedButtons {
+        min-height: 4rem;
     }
 }
 
-.project .linkedButtons.netflix {
-    padding-top: 0px;
-}
-
-.project .linkedButtons.calculator {
-    padding-top: 85px;
-}
-
-.project .linkedButtons.casino {
-    padding-top: 47.5px;
+.content-projects .linkedButtons {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .project button {
     padding: 10px 10px;
-    font-size: 16px; 
+    font-size: 14px; 
     background: var(--menu-color);
     border: 1px solid var(--primary-color);
     border-radius: 50px;
@@ -813,11 +796,11 @@ nav {
 
 @media (max-width: 1280px) {
     .project button {
-        font-size: 14px;
+        font-size: 12px;
     }
 } 
 
-#projmobil {
+#projmobile {
     display: none;
 }
 
@@ -826,14 +809,14 @@ nav {
     font-family: Raleway-SemiBold;
 }
 
-@media (max-width: 859px) {
+@media (max-width: 860px) {
     #p2 {
         display: none;
     }
 }
 
-@media (max-width: 859px) {
-    #projmobil {
+@media (max-width: 860px) {
+    #projmobile {
         display: flex;
         padding-top: 5rem;
         margin: 0 auto;
@@ -841,6 +824,7 @@ nav {
         color: #fff;
     }
 }
+
 /* section skills */
 
 .skills {
